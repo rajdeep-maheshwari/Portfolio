@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajdeep Maheshwari - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(28, 22, 36);
+            color: rgb(255, 255, 255);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(25, 25, 27);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            list-style: center;
+            margin: 0 23px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.5rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 200px 85px 50px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .fristSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 150px 0;
+        }
+
+        .fristSection>div {
+            width: 30% 50%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            align-items: left;
+            margin-bottom: 30%;
+
+        }
+
+        .para {
+            font-size: 19px;
+        }
+
+        .rightSection img {
+            width: 85%;
+            max-width: 300px;
+            border: 5px solid rgb(243, 240, 51);
+            margin-bottom: 50%;
+            margin-bottom: 70%;
+        }
+
+        .circular--square {
+            border-radius: 50%;
+            border-top-left-radius: 100% 100%;
+            border-top-right-radius: 100% 100%;
+            border-bottom-right-radius: 100% 100%;
+            border-bottom-left-radius: 100% 100%;
+
+        }
+
+        .purple {
+            color: aqua;
+            font-size: 3rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(220, 54, 253);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 20vh;
+            padding-top: 35px;
+            padding-bottom: 400px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+            color: red;
+        }
+
+        .secondSection .box {
+            background: rgb(250, 103, 103);
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 100px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Rajdeep's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a herf="/">Home</a></li>
+                    <li><a herf="/">About</a></li>
+                    <li><a herf="/">Services</a></li>
+                    <li><a herf="/">Projects</a></li>
+                    <li><a herf="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fristSection">
+            <div class="leftSection">
+                Hello, My name is <br><span class="purple">Rajdeep Maheshwari</span>
+                <div>and I am a
+                    <span id="element"></span>
+                    <p class="para">As a full-stack developer, I'm passionate about using HTML, CSS<br> and JavaScript
+                        to create
+                        engaging online experiences.<br> competent with a wide range of front-end frameworks and
+                        technologies. <br>I
+                        can't wait to get into the realm of web development.<br>Devoted to refining my abilities,<br> I
+                        look
+                        forward to the chance to work on meaningful projects<br> and with experts that share my values.
+                    </p>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img class="circular--square" src="Clipped_image_20240322_122135.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have experienced so far</span>
+            <h1>Skills</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">HTML</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">CSS</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">JAVA</div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">ENGLISH SPEAKING</div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Full Stack Developer'],
+
+            typeSpeed: 80,
+        });
+    </script>
+</body>
+</body>
+
+</html>
